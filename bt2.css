@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.to {width: 100%; height: 100%;}
+.top {
+    width: 70%;
+    height: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.top .top__left {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+}
+.top .top__left .time {
+    margin-right: 10px;
+}
+.top .top__left .time::before{
+    content: "\f017";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 5px;
+}
+.top .top__left .time::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 0.5;
+}
+.top .top__left .phone {
+    margin-right: 15px;
+}
+.top .top__left .phone::before {
+    content: "\f095";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 5px;
+}
+.top .top__left .phone::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 0.5;
+}
+.top .top__left .mail {
+    margin-right: 15px;
+}
+.top .top__left .mail::before{
+    content: "\f003";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 5px;
+}
+.top .top__right img{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+.top .top__right img{
+    margin-left: -5px;
+}
+/* end phần top */
+
+/* begin phần header +menu */
+header {
+    width: 70%;
+    height: 90px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .left {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    font-size: 29px;
+    font-weight: bold;
+}
+header .left img {
+    width: 34px;
+    height: 29px;
+    margin: auto;
+}
+header .right {
+    display: flex;
+    margin: auto;
+    margin-right: 0px;
+    
+}
+header .right h3 {
+    margin: 15px 5px 15px 15px;
+    justify-content: right;
+}
+header .right img {
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px 15px 15px;
+}
+/* end header +menu */
+
+/* img dưới header */
+
+.bigimg {
+    width: 100%;
+    height: 720px;
+    background: url(./imgs/img1-1.jpg) top center;
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bigimg .chuto {
+    font-family: segoe ui light;
+    font-size: 60px;
+    font-weight: 200;
+    position: absolute;
+    top: 22%;
+    left: 21%;
+    opacity: 0.8;
+
+}
+.bigimg .chudam {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    position: absolute;
+    top: 32%;
+    left: 21%;
+    opacity: 0.8;
+
+}
+.bigimg .chudam::after {
+    content: '.';
+    color: rgb(131, 177, 26);
+    opacity: 0.8;
+
+}
+
+.bigimg p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 42%;
+    left: 21.5%;
+    opacity: 0.8;
+
+}
+.bigimg .more {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(131, 177, 26);
+    position: absolute;
+    top: 48%;
+    left: 21%;
+    border: none;
+    color: white;
+
+}
+.bigimg .more:hover {
+    cursor: pointer;
+}
+/* End hình dưới header */
+
+/* phần text giữa 1 */
+article {
+    width: 100%;
+    height: 750px;
+    padding-top: 100px;
+}
+article .texttren {
+    text-align: center;
+    height: 200px;
+}
+article .texttren h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    margin: 0 20px 20px;
+    color: rgb(88, 88, 88);
+}
+article .texttren pre {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    margin: auto;
+    text-align: center;
+}
+article .textduoi {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-between;
+}
+article .textduoi span {
+    display: block;
+}
+article .textduoi .left {
+    width: 30%;
+    height: 390px;
+    border: 1px groove ;
+    text-align: center;
+}
+article  h6{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    margin: 20px;
+    margin-top: 15%;
+
+}
+article  pre{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px;
+}
+article img{
+    margin: 10px;
+}
+article span {
+    margin: 10px;
+    opacity: 0.5;
+}
+article span:hover{
+    cursor: pointer;
+}
+article span:hover::before {
+    left: 0;
+}
+article span::before {
+    content: "\f178";
+    font: normal normal normal 14px/1 FontAwesome;
+    opacity: 0.5;
+    position: relative;
+    left: -10px;
+    transition: 0.5s;
+}
+article .textduoi .mid {
+    width: 30%;
+    height: 390px;
+    border: 1px groove ;
+    text-align: center;
+}
+article .textduoi .right {
+    width: 30%;
+    height: 390px;
+    border: 1px groove ;
+    text-align: center;
+}
+/* end phần text 1 */
+
+/* begin 4 hinh */
+.bighai{
+    width: 100%;
+    height: 690px;
+    background-color: rgb(245, 249, 252);
+    position: relative;
+}
+.content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content .content__text{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+}
+.content .content__text .text__left {
+    margin: auto;
+    margin-left: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.content__text .text__left hr {
+    width: 60px;
+    height: 3px;
+    color:  rgb(119, 168, 1);
+    background-color: rgb(119, 168, 1);
+}
+.content__text .text__right .xanh {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    color: rgb(119, 168, 0);
+    border: rgb(119, 168, 0) 1px solid ;
+}
+.content .content__text .text__right .xam{
+    color: rgb(112, 112, 112);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.bighai .bonhinh {
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+.bighai .bonhinh img {
+    width: 25%;
+}
+
+.bighai .btn {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 55px;
+    background-color: rgb(131, 177, 26);
+    border: none;
+    cursor: pointer;
+}
+
+.bighai .btn span{
+    margin: auto;
+    color: white;
+    font-weight: 700;
+}
+/* <!-- end 4 hinh --> */
+
+/* <!-- begin box co 2 hinh --> */
+.bigba {
+    width: 70%;
+    height: 1150px;
+    padding-top: 90px;
+    text-align: flex-start;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bigba .textone{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.bigba .textone h5{
+    font-size: 32px;
+    margin: 20px;
+}
+.textone pre {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+
+}
+
+
+.bigba .boxnho{
+    border:  1px  black solid;
+    height: 780px;
+}
+.bigba .boxnho .tren {
+    display: flex;
+}
+.boxnho .tren img {
+    flex: 1;
+    width: 50%;
+    height: 390px;
+
+}
+.boxnho .tren .phai {
+    flex: 1;
+    font-size: 24px;
+    padding: 40px;
+    padding-top: 80px;
+
+}
+.boxnho .tren .phai h6{
+    margin-bottom: 10px;
+}
+.boxnho .tren .phai hr {
+    width: 40px;
+    height: 2px;
+    color:  rgb(119, 168, 1);
+    background-color: rgb(119, 168, 1);
+}
+.boxnho .tren .phai pre , .duoi .trai pre{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+.boxnho .duoi {
+    width: 100%;
+    display: flex;
+}
+.boxnho .duoi .trai {
+    flex: 1;
+    font-size: 24px;
+}
+.boxnho .duoi .trai h6 {
+    padding-left: 40px;
+    padding-top: 80px;
+    margin-bottom: 10px;
+}
+.boxnho .duoi .trai hr {
+    margin-left: 40px;
+    width: 40px;
+    height: 2px;
+    color:  rgb(119, 168, 1);
+    background-color: rgb(119, 168, 1);
+}
+.boxnho .duoi .trai pre {
+    padding-left: 40px;
+
+}
+.boxnho .duoi img {
+    flex: 1;
+    width: 50%;
+    height: 391px;
+}
+/* het box 2 hinh */
+
+/* box xam co 3 incons */
+.to > .xam {
+    width: 100%;
+    height: 710px;
+    background-color: rgb(245, 249, 252);
+}
+
+.to > .xam .tren {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.to > .xam .tren p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+.to > .xam .tren pre {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.to > .xam .duoi {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+}
+.to > .xam .duoi .box {
+    display: flex;
+}
+.to > .xam .duoi .box .content {
+    width: 420px;
+    height: 280px;
+    border: rgb(236, 236, 236) 1px solid;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+}
+.to > .xam .duoi .box .content img{
+    width: 50px;
+    height: 50px;
+    flex: 10%;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+.to > .xam .duoi .box .content .text {
+    width: 350px;
+    height: 100%;
+    margin-top: 30px;
+}
+.duoi .box .content .text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+.duoi .box .content .text pre{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+.duoi .box .content .text span{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.duoi .box .content .text span:hover {
+    cursor: pointer;
+
+}
+.duoi .box .content .text span:hover::before{
+    left: 0;
+}
+.duoi .box .content .text span::before{
+    content: "\f178";
+    font: normal normal normal 14px/1 FontAwesome;
+    opacity: 0.5;
+    position: relative;
+    left: -10px;
+    transition: 0.5s;
+}
+.dichuyen {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+/* end box xam co 3 incons */
+
+/* ! hinh qhy choose us */
+.bigbon {
+    width: 100%;
+    height: 630px;
+    display: flex;
+}
+.bigbon img{
+    width: 50%;
+}
+.bigbon .content{
+    padding-top: 100px;
+}
+.bigbon .content h6{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    width: 50%;
+    margin: flex-start;
+}
+.bigbon .content hr {
+    margin-left: 85px;
+    width: 40px;
+    height: 2px;
+    color:  rgb(119, 168, 1);
+    background-color: rgb(119, 168, 1);
+}
+.bigbon .content .a {
+    height: 50px;
+    text-align: center;
+    border: rgb(187, 187, 187) 1px solid;
+    width: 70%;
+    margin-left: 85px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.bigbon .content .a p {
+    margin: auto;
+    font-family: 'Roboto', sans-serif light;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.bigbon .content .a img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.bigbon .content span {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: flex-start;
+    margin-left: 100px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+/* end 1 hinh */
+
+/* div xam 3 */
+.xamba {
+    width: 100%;
+    height: 720px;
+    background-color: rgb(245, 249, 252);
+}
+
+/* end xam3 */
+
+/* 6logo */
+.saulogo {
+    width: 70%;
+    height: 160px;
+    display: flex;
+    margin: auto;
+}
+.saulogo img {
+    width: 140px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+/* end 6 logo */
+
+/* footer */
+footer {
+    width: 100%;
+    height: 650px;
+    background-color: rgb(56, 55, 60);
+    color: rgb(190, 190, 190);
+    
+}
+
+footer .tren {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+footer .content {
+    width: 70%;
+    display: flex;
+}
+footer .tren .content .trai{width: 30%;}
+footer .tren .content .trai .logo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: white;
+}
+footer .tren .content .logo img {
+    width: 32px;
+    height: 32px;
+    margin-top: 11px;
+}
+footer .tren .content .logo h5 {
+    font-size: 32px;
+    margin-top:5px ;
+}
+.tren .content .textgiua {
+    font-family: 'Roboto', sans-serif light;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content .trai p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.content .trai .diachi::before{
+    content: "\f041";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 10px 10px 10px 0px;
+}
+.content .trai .phone::before {
+    content: "\f095";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.content .trai .email::before{
+    content: "\f003";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin: 10px 10px 10px 0px;
+}
+
+.content .giua{
+    width: 30%;
+    margin: 0 auto;
+}
+.content .giua hr{
+    width: 100%;
+    border-bottom-width:0px;   
+    margin-top: 20px; 
+}
+.content .giua h5 {
+    font-family: 'Roboto', sans-serif light;
+    font-size: 18px;
+}
+.content .giua .box{
+    display: flex;
+    margin-top: 20px;
+}
+.content .giua .box img {
+    height: 84px;
+    width: 84px;
+}
+.content .giua .box .text {
+    width: 60%;
+    margin: auto;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif light;
+    font-size: 18px;
+}
+.content .giua .box .text span{
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif light;
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+}
+
+footer{width: 100%;}
+footer .phai {
+    width: 30%;
+    margin: 0 auto;
+
+}
+footer .phai h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+footer .phai pre{
+    width: 30%;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+footer .phai form input{
+    background-color: rgb(56, 55, 60);
+    color: rgb(190, 190, 190);
+    border-color:rgb(204, 204, 204);
+    margin: 20px;
+}
+footer .phai form .inputmessage {
+}
+
+footer > hr{
+    width: 100%;
+    border-bottom-width:0px;
+    margin-top: -20px;
+}
+footer .bignam {
+    width: 70%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    color: white;
+
+}
+footer .bignam .trai{
+    margin: flex-start;
+    margin: 5px;
+
+}
+footer .bignam .phai{
+    display: flex;
+    margin-right: 0;
+    justify-content: center;
+}
+footer .bignam .phai a{
+    color: white;
+    margin: 5px;
+}
+footer .bignam .phai a::after{
+    content: "\f111";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-left: 10px;
+    font-size: 8px;
+    color: rgb(82, 82, 82);
+}
